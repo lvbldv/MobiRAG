@@ -6,7 +6,7 @@
 
 ## 🎥 Demo
 
-▶️ [Watch Demo Video](https://github.com/nishchaljs/MobiRAG/blob/main/assets/MobiRAG_finalcut_cropped.mp4)
+▶️ [YT Video](https://youtube.com/shorts/8FJI6Fewlgc?feature=share)
 
 ---
 
