@@ -1,0 +1,46 @@
+{
+  "buildFiles": [
+    "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/src/main/cpp/source/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/opt/homebrew/bin/ninja",
+      "-C",
+      "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/.cxx/Debug/3u1nr5lq/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/opt/homebrew/bin/ninja",
+    "-C",
+    "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/.cxx/Debug/3u1nr5lq/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "faiss::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "faiss",
+      "output": "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/build/intermediates/cxx/Debug/3u1nr5lq/obj/arm64-v8a/libfaiss.so",
+      "runtimeFiles": [
+        "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/src/main/cpp/source/llama.cpp/build/bin/libggml-base.so",
+        "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/src/main/cpp/source/llama.cpp/build/bin/libggml-cpu.so",
+        "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/src/main/cpp/source/llama.cpp/build/bin/libggml.so",
+        "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/src/main/cpp/source/llama.cpp/build/bin/libllama.so",
+        "/Users/nishchaljagadeesha/StudioProjects/android-faiss/app/src/main/cpp/source/llama.cpp/build/bin/libcommon.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/nishchaljagadeesha/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/nishchaljagadeesha/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

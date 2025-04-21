@@ -1,0 +1,46 @@
+{
+  "buildFiles": [
+    "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/src/main/cpp/source/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/opt/homebrew/bin/ninja",
+      "-C",
+      "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/.cxx/Debug/28z2m4b2/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/opt/homebrew/bin/ninja",
+    "-C",
+    "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/.cxx/Debug/28z2m4b2/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "faiss::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "faiss",
+      "output": "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/build/intermediates/cxx/Debug/28z2m4b2/obj/arm64-v8a/libfaiss.so",
+      "runtimeFiles": [
+        "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/src/main/cpp/source/llama.cpp/build/bin/libggml-base.so",
+        "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/src/main/cpp/source/llama.cpp/build/bin/libggml-cpu.so",
+        "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/src/main/cpp/source/llama.cpp/build/bin/libggml.so",
+        "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/src/main/cpp/source/llama.cpp/build/bin/libllama.so",
+        "/Users/nishchaljagadeesha/StudioProjects/mobirag/app/src/main/cpp/source/llama.cpp/build/bin/libcommon.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/nishchaljagadeesha/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/nishchaljagadeesha/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

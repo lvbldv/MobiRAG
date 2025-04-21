@@ -1,0 +1,6 @@
+[submodule "app/src/main/cpp/llama.cpp"]
+	path = app/src/main/cpp/llama.cpp
+	url = https://github.com/ggerganov/llama.cpp.git
+[submodule "app/src/main/cpp/source/llama.cpp"]
+	path = app/src/main/cpp/source/llama.cpp
+	url = https://github.com/ggml-org/llama.cpp.git

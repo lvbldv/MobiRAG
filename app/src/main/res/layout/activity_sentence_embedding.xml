@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sentence Embedding with PQ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:maxLines="5"
+        android:hint="Enter text to generate embedding"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:gravity="top|start" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnGenerateEmbedding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Generate Embedding"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnCompressEmbedding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Compress with PQ"
+            android:enabled="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUploadPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload PDF File"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnUseAllPdfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use All PDFs on Device"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextSearchQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:maxLines="3"
+        android:hint="Enter search query here..."
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine" />
+
+
+    <!-- Button to perform search -->
+    <Button
+        android:id="@+id/btnSearchIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Index for Top 5 Results"
+        android:layout_marginBottom="16dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvFileProcessingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Idle"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to generate embeddings..."
+            android:textIsSelectable="true" />
+    </ScrollView>
+
+</LinearLayout>
