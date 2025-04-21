@@ -54,7 +54,7 @@ https://github.com/user-attachments/assets/f332debd-9a12-4c38-81a4-b992d62ee6b4
 
 ## 🛠️ Technical Highlights
 
-- ✨ **Efficient Compression**: FAISS PQ compresses 384-dim vectors at **32x**, enabling 1000 PDFs to fit in ~2.4MB.
+- ✨ **Efficient Compression**: FAISS PQ compresses 384-dim vectors at **32x**, enabling 1000 PDFs to fit in ~2.4MB (upto 97x can be obtained with a compromize on performance).
 - ✨ **FAISS Tradeoff**: Slight drop in search quality from PQ vs flat index — but acceptable for mobile efficiency.
 - ✨ **Metadata-Only Storage**: Chunks are not stored — only chunkID + PDF location + offset are. Text is extracted on-demand.
 - ✨ **Privacy by Design**: If a PDF is deleted from storage, its chunks become inaccessible.
@@ -88,6 +88,22 @@ git submodule update --init --recursive
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
 - [PDFBox Android](https://github.com/TomRoush/PdfBox-Android)
 - [ONNX Runtime](https://onnxruntime.ai/)
+
+---
+
+## ✅ TODO
+
+- [ ] **Refactor to MVC architecture**  
+  Reorganize app code into clean `Model-View-Controller` separation for maintainability and testing
+
+- [ ] **Improve hybrid RAG scoring**  
+  Replace naive combination of vector similarity + keyword overlap with a unified scoring function (e.g., z-score normalization, weighted distances)
+
+- [ ] **Optimize FAISS PQ & SLM inference**  
+  Experiment with different PQ training sizes, nprobe settings, and SLM decoding strategies for best quality-performance tradeoff
+
+- [ ] **Improve system prompt**  
+  Design a robust, guardrailed prompt template that guides the SLM to avoid hallucinations and respect query constraints
 
 ---
 
