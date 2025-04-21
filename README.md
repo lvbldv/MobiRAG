@@ -97,7 +97,7 @@ git submodule update --init --recursive
   Reorganize app code into clean `Model-View-Controller` separation for maintainability and testing
 
 - [ ] **Improve SLM Inference speed**  
-  ```llama.cpp``` uses android cpu. Need to explore alternatives like ```mlc llm``` to utilize GPUs for inference on android
+  ```llama.cpp``` uses android cpu - tends to be very slow for long prompts. Need to explore alternatives like ```mlc llm``` to utilize GPUs for inference on android
 
 - [ ] **Improve hybrid RAG scoring**  
   Replace naive combination of vector similarity + keyword overlap with a unified scoring function (e.g., z-score normalization, weighted distances)
