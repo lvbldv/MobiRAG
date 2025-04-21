@@ -5,6 +5,11 @@
 ---
 
 ## 🎥 Demo
+<div align="center">
+
+https://github.com/user-attachments/assets/f332debd-9a12-4c38-81a4-b992d62ee6b4
+
+</div>
 
 ▶️ [YT Video](https://youtube.com/shorts/8FJI6Fewlgc?feature=share)
 
