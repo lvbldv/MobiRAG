@@ -2,7 +2,7 @@
 
 **MobiRAG** (Mobile Retrieval-Augmented Generation) is a lightweight, privacy-first Android app that enables users to **chat with any PDF file stored on their phone** — entirely offline. With on-device embedding generation, vector compression, and SLM inference, MobiRAG brings the power of AI search and summarization directly to your pocket.
 
-No internet, no cloud servers, and no telemetry — everything runs natively on your phone, ensuring complete data peivacy and zero leakage. Whether you’re reviewing research papers, legal documents, or ebooks, MobiRAG offers a seamless way to search, ask questions, and summarize content using optimized RAG for mobile devices.
+No internet, no cloud servers, and no telemetry — everything runs natively on your phone, ensuring complete data privacy and zero leakage. Whether you’re reviewing research papers, legal documents, or ebooks, MobiRAG offers a seamless way to search, ask questions, and summarize content using optimized RAG for mobile devices.
 
 ---
 
