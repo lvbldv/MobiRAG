@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/f332debd-9a12-4c38-81a4-b992d62ee6b4
 
 ### 2. Query Execution
 - User query is embedded using ONNX `all-MiniLM-L6-v2` model
-- FAISS returns top-k chunk IDs based on PQ-compressed vector similarity (nearest neighbours appraoch)
+- FAISS returns top-k chunk IDs based on PQ-compressed vector similarity (nearest neighbours approach)
 - Matching metadata is used to extract chunk text on the fly
 - TF-IDF keyword overlap further refines relevance
 - Combined context is used to prompt a local SLM (Qwen) to generate the answer
