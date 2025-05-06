@@ -39,13 +39,13 @@ jobs:
         run: ./gradlew assembleRelease
 
       - name: Upload Debug APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4.4
         with:
           name: MyApp-Debug-APK
           path: app/build/outputs/apk/debug/*.apk
 
       - name: Upload Release APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4.4
         with:
           name: MyApp-Release-APK
           path: app/build/outputs/apk/release/*.apk
