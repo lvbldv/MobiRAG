@@ -32,14 +32,21 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
+      - name: List Gradle files for debugging
+        run: ls -R .
+
       - name: Build Debug APK
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Build Release APK
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleRelease --stacktrace
         
+      - name: List APK files
+        run: ls -R app/build/outputs/apk
+
       - run: mkdir -p app/build/outputs/apk/debug
       - run: mkdir -p app/build/outputs/apk/release
+
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4.6.2
         with:
